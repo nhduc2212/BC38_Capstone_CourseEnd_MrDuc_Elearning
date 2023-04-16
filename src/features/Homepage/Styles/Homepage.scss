@@ -1,0 +1,32 @@
+.outer-homepage-container{
+    width: 100%;
+    margin: auto;
+    background-image: url('https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.inner-homepage-container{
+    width: 60%;
+    margin: auto;
+    max-width: 1600px;
+   
+    .homepage-ad-photo-container{
+        width: 100%;
+        box-shadow: 0 10px 10px 10px rgba(87, 87, 87, 0.4);
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    };
+    .homepage-latest-course{
+        box-shadow: 0 10px 10px 10px rgba(87, 87, 87, 0.4);
+    }
+    
+}
+
+button{
+    cursor: pointer;
+}

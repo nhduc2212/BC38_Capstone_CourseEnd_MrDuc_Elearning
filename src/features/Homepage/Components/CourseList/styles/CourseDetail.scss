@@ -1,0 +1,67 @@
+.course-details-outer-container {
+  width: 100%;
+  margin: auto;
+  background-image: url("https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  .course-photo-container {
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    .course-photo-container-background {
+      background-position: center;
+      background-size: contain;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      filter: grayscale(1) opacity(0.6);
+    }
+    img {
+      position: absolute;
+      max-height: 700px;
+      min-height: 500px;
+      right: 50%;
+      top: 50%;
+      transform: translateY(-50%) translateX(50%);
+      filter: grayscale(0) saturate(1) opacity(1);
+      z-index: 2;
+    }
+  }
+  .course-details-inner-container{
+    
+  .course-details-details{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgba(255,255,255,0.8);
+    padding-right: 20%;
+    padding-left: 20%;
+    min-height: 100vh;
+    .course-title{
+        text-align: center;
+        font-size: 50px;
+        font-weight: bolder;
+
+    }
+    .course-rating-container{
+     
+        margin: auto;
+        display: inline;
+        width:100vw;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .course-details-content{
+        margin-top: 100px;
+        h3{
+            font-size: 50px;
+        }
+        p{
+            font-size: 30px;
+        }
+    }
+  }}
+}

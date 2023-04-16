@@ -1,0 +1,35 @@
+.user-profile-outer-container{
+    width: 100%;
+    margin: auto;
+    background-image: url("https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .user-profile-inner-container{
+        margin: auto;
+        background-color: rgba(255,255,255,0.6);
+        width: 60%;
+        padding: 40px;
+        height: fit-content;
+        justify-content: center;
+        text-align: center;
+        .profile-field{
+            margin-bottom: 10px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        button{
+            margin-right: 3px;
+        }
+        .registered-courses-outer-container{
+            .registered-courses-inner-container{
+                display: flex;
+                justify-content: space-around;
+                button{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

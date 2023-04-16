@@ -1,0 +1,37 @@
+.user-registration-outer-container {
+    width: 100%;
+    margin: auto;
+    background-image: url("https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    
+    .user-registration-inner-container {
+        margin: auto;
+        background-color: rgba(255,255,255,0.8);
+        width: 60%;
+        padding: 40px;
+        height: fit-content;
+        justify-content: center;
+        text-align: center;
+       
+        input{
+            text-align: center;
+            margin: auto;
+            margin-top: 2px;
+            margin-bottom: 8px;
+            width: 80%;
+            transition: all 0.5s;
+           
+        }
+        button{
+            
+        }
+        button.disabled{
+            background-color: grey;
+  color: white;
+  cursor:not-allowed;
+  
+        }
+    }}
