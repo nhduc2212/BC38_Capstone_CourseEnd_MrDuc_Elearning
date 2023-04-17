@@ -17,6 +17,7 @@ export const adminServ = {
         pageSize,
       }
     }),
+    fetchCourseCategoryList:()=>https.get('/QuanLyKhoaHoc/LayDanhMucKhoaHoc'),
     deleteUser:(TaiKhoan)=>https.delete("/QuanLyNguoiDung/XoaNguoiDung", {params:{
       TaiKhoan
     }} ),
@@ -31,6 +32,9 @@ export const adminServ = {
       tuKhoa:keyWord,
       page,
       pageSize,
-    }})
+    }}),
+    postNewCourse: (courseData)=> https.post('/QuanLyKhoaHoc/ThemKhoaHoc', courseData),
+    deleteCourseAdmin:(courseId)=>https.delete('/QuanLyKhoaHoc/XoaKhoaHoc', {params:{MaKhoaHoc:courseId}} ),
+    adminCourseAdjustment:(courseData)=>https.post('/QuanLyKhoaHoc/CapNhatKhoaHoc', courseData),
 };
 

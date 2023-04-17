@@ -36,7 +36,7 @@ const Footer = () => {
             <h3>Nhận tin sự kiện và khuyến mãi</h3>
             <p>Để lại email để nhận thông báo về sự kiện và khuyển mãi của trung tâm</p>
             <div className="mb-3">
-              <input className="w-full mb-1" type="email" placeholder="deptrai@handsome.com"  />
+              <input className="w-full mb-1" type="email" placeholder="deptrai@handsome.com" />
               <button className="event-promo-button">Đăng ký nhận thông tin</button>
             </div>
           </div>
@@ -45,9 +45,9 @@ const Footer = () => {
           <div className="contact-form">
             <h3>Đăng ký tư vấn</h3>
             <form action="">
-              <input type="text" placeholder="Họ và tên"/>
-              <input type="email" placeholder="Email liên hệ"/>
-              <input type="text" placeholder="Điện thoại liên hệ"/>
+              <input type="text" placeholder="Họ và tên" />
+              <input type="email" placeholder="Email liên hệ" />
+              <input type="text" placeholder="Điện thoại liên hệ" />
               <button className="contact-info-button">Đăng ký tư vấn</button>
             </form>
 

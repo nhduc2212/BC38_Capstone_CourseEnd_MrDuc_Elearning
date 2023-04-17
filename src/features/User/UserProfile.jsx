@@ -56,7 +56,7 @@ const UserProfile = () => {
   };
   const handleUpdateConfirmation = (userData) => {
     dispatch(updateProfile(userData));
-     window.location.reload()
+    dispatch(fetchLoggedInUserProfile)
   };
 
   const handleCancel = () => {
@@ -88,10 +88,10 @@ const UserProfile = () => {
     console.log(editableProfileData);
   };
 
-  const handleCourseRemoval = (courseId,account) =>{
-userServ.courseRemoval(courseId,account)
-window.location.reload()
-  }
+  const handleCourseRemoval = (courseId, account) => {
+    userServ.courseRemoval(courseId, account);
+    window.location.reload();
+  };
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -104,7 +104,7 @@ window.location.reload()
         style={{
           paddingTop: headerHeight + "px",
           paddingBottom: footerHeight + "px",
-          height: 100 + "vh",
+          
         }}
       >
         <div className="user-profile-inner-container">
@@ -212,27 +212,33 @@ window.location.reload()
           <div className="mt-16 registered-courses-outer-container">
             <h3>Các khoá học đã đăng ký</h3>
             <div className="registered-courses-inner-container flex-wrap">
-              {profileData.chiTietKhoaHocGhiDanh?.map((course)=>{return(
-                <div><Card
-                hoverable
-                style={{
-                  width: 10+"vw",
-                }}
-                className='h-96 mb-1 overflow-y-scroll'
-                cover={
-                  <img
-                    alt="example"
-                    src={course.hinhAnh}
-                  />
-                }
-              >
-                <Meta
-                  title={course.tenKhoaHoc}
-                  description={course.moTa}
-                />
-              </Card>
-              <button className="course-removal-btn" onClick={()=>{handleCourseRemoval(course.maKhoaHoc,profileData.taiKhoan)}}>Huỷ đăng ký</button></div>
-              )
+              {profileData.chiTietKhoaHocGhiDanh?.map((course) => {
+                return (
+                  <div>
+                    <Card
+                      hoverable
+                     
+                      className="registered-course-cards h-96 mb-1 overflow-y-scroll"
+                      cover={<img alt="example" src={course.hinhAnh} />}
+                    >
+                      <Meta
+                        title={course.tenKhoaHoc}
+                        description={course.moTa}
+                      />
+                    </Card>
+                    <button
+                      className="course-removal-btn"
+                      onClick={() => {
+                        handleCourseRemoval(
+                          course.maKhoaHoc,
+                          profileData.taiKhoan
+                        );
+                      }}
+                    >
+                      Huỷ đăng ký
+                    </button>
+                  </div>
+                );
               })}
             </div>
           </div>

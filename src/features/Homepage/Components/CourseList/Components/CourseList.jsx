@@ -22,9 +22,7 @@ const CourseList = () => {
         <div className="course-list-details-inner-container ">
 <div className="course-details-container flex flex-wrap justify-around">
 {courseListDetailsData?.map((item)=>(
-              <div style={{
-                width: 21+"%",
-              }} className='homepage-card-container mb-9'><Card style={{
+              <div className='homepage-card-container mb-9'><Card style={{
                 width: 100+"%",
               }} className='h-96 mb-1 overflow-y-scroll'
               

@@ -3,7 +3,8 @@ const initialState = {
   userData: [],
   userUnsortedData:[],
   courseList: [],
-  userDataFiltered:[]
+  userDataFiltered:[],
+  courseCategoryList:[],
 };
 
 const adminReducer = (state = initialState, action) => {
@@ -21,6 +22,9 @@ const adminReducer = (state = initialState, action) => {
         case "ADMIN_SEARCHING":
           draft.userDataFiltered = action.payload;
         break;
+        case "ADMIN_FETCH_COURSE_CATEGORY":
+          draft.courseCategoryList=action.payload;
+          break;
 
       default:
         break;

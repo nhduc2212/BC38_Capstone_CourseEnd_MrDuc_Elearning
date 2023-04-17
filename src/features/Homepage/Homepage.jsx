@@ -25,9 +25,7 @@ const Homepage = () => {
           <h3 className='text-center text-2xl mb-4'>CÁC KHOÁ HỌC MỚI NHẤT</h3>
           <div className='latest-course-list flex flex-wrap justify-between'>
             {courseData?.slice(0,8)?.map((course)=>(
-              <div style={{
-                width: 21+"%",
-              }} className='homepage-card-container mb-9'><Card style={{
+              <div className='homepage-card-container mb-9'><Card style={{
                 width: 100+"%",
               }} className='h-96 mb-1 overflow-y-scroll'
               

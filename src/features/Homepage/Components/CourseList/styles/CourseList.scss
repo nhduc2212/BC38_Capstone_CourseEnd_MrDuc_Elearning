@@ -5,11 +5,26 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    box-sizing: border-box;
 }
 
 .course-list-details-inner-container{
     width: 60%;
     margin: auto;
     max-width: 1600px;
-    
+    @media screen and (max-width:1600px) {
+            width: 80%;
+        }
+        @media screen and (max-width:1280px) {
+            width: 90%;
+        }
+    .homepage-card-container{
+        width: 21%;
+        @media screen and (max-width:1280px) {
+            width: 45%;
+        }
+        @media screen and (max-width:800px) {
+            width: 80%;
+        }
+    }
 }

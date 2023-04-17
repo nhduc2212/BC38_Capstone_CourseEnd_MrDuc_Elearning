@@ -1,10 +1,15 @@
 .user-profile-outer-container{
     width: 100%;
+    height: fit-content;
     margin: auto;
+    box-sizing: border-box;
     background-image: url("https://coolbackgrounds.io/images/unsplash/samuel-zeller-medium-b832fe04.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    @media screen and (max-width:1600px) {
+        height: fit-content
+    }
     .user-profile-inner-container{
         margin: auto;
         background-color: rgba(255,255,255,0.6);
@@ -23,11 +28,50 @@
             margin-right: 3px;
         }
         .registered-courses-outer-container{
+            width: 100%;
             .registered-courses-inner-container{
                 display: flex;
                 justify-content: space-around;
+                margin: auto;
+                width: 95%;
+                
+                @media screen and (max-width:1200px) {
+                    width: 90%;
+
+           
+                }
                 button{
                     width: 100%;
+                    @media screen and (max-width:1600px) {
+                        width: 20%;
+               
+                    }
+                    @media screen and (max-width:800px) {
+                        width: 30%;
+               
+                    }
+                }
+                .registered-course-cards{
+                    width: 10vw;
+                    height: 400px;
+                    margin: auto;
+                    margin-bottom: 20px;
+                    @media screen and (max-width:1600px) {
+                        width: 40%;
+                        height: 300px;
+
+                    }
+
+                    @media screen and (max-width:800px) {
+                        width: 90%;
+                        height: 400px;
+
+                    }
+                    @media screen and (max-width:600px) {
+                        width: 95%;
+                        height: 400px;
+
+                    }
                 }
             }
         }

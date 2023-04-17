@@ -25,9 +25,7 @@ const CourseSearch = () => {
         <div className='course-search-outer-container' style={{paddingTop:headerHeight+"px",paddingBottom:footerHeight+"px", minHeight:"100vh"}}>
         <div className='course-search-inner-container flex flex-wrap justify-around'>
         {courseData?.map((item)=>(item.tenKhoaHoc.toLowerCase().includes(params.keyword.toLowerCase())?
-              <div style={{
-                width: 21+"%",
-              }} className='homepage-card-container mb-9'><Card style={{
+              <div  className='homepage-card-container mb-9'><Card style={{
                 width: 100+"%",
               }} className='h-96 mb-1 overflow-y-scroll'
               

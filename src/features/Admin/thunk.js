@@ -39,3 +39,13 @@ export const fetchSearchingUserList = (keyWord, page)=> async (dispatch)=>{
     })
   }catch(err){}
 }
+
+export const fetchCourseCategoryList = async (dispatch) => {
+  try {
+    const res = await adminServ.fetchCourseCategoryList()
+    dispatch({
+      type:"ADMIN_FETCH_COURSE_CATEGORY",
+      payload: res.data,
+    })
+  }catch(err){}
+}
